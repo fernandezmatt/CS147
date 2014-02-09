@@ -18,14 +18,34 @@
 </head>
 
 <body>
-	<a href="/">GO BACK</a>
-	<h2>Settings Page</h2>
-	<h2>Medication Confirmation</h2>
-<div class="btn-group" data-toggle="buttons-radio">
-    <button type="button" class="btn btn-primary">All pills together</button>
-    <button type="button" class="btn btn-primary">Each medicine seperately</button>
-    <button type="button" class="btn btn-primary">Each pill seperately</button>
+	<h2>Settings</h2>
+	<div>
+	<h4>Medication Confirmation</h4>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+    All Medicines Together
+  </label>
 </div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+    Each Medicine Seperately
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+    Each Pill Seperately
+  </label>
+</div>
+<br />
+<h4>Common Symptoms</h4>
+
+	<div class="btn-group btn-group-justified">
+		<a class="btn btn-primary btn-lg" href="/">Save Changes</a> <!-- NEED TO IMPLEMENT -->
+		<a class="btn btn-primary btn-lg" href="/">Back</a>
+	</div>
 	</body>
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
