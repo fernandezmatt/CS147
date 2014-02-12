@@ -14,6 +14,7 @@ var providerInfo = require('./routes/providerInfo');
 var settings = require('./routes/settings');
 var history = require('./routes/history');
 var sendReport = require('./routes/sendReport');
+var medicineTaking = require('./routes/medicineTaking');
 // Example route
 // var user = require('./routes/user');
 
@@ -46,6 +47,7 @@ app.get('/providerInfo',providerInfo.view);
 app.get('/settings',settings.view);
 app.get('/history',history.view);
 app.get('/sendReport',sendReport.view);
+app.get('/medicineTaking',medicineTaking.view);
 // Example route
 // app.get('/users', user.list);
 
