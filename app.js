@@ -15,6 +15,10 @@ var settings = require('./routes/settings');
 var history = require('./routes/history');
 var sendReport = require('./routes/sendReport');
 var medicineTaking = require('./routes/medicineTaking');
+var medicineTaking2 = require('./routes/medicineTaking2');
+var medicineTaking3 = require('./routes/medicineTaking3');
+var medicineTakingConfirm = require('./routes/medicineTakingConfirm');
+var medicineTakingSymptoms = require('./routes/medicineTakingSymptoms');
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +52,10 @@ app.get('/settings',settings.view);
 app.get('/history',history.view);
 app.get('/sendReport',sendReport.view);
 app.get('/medicineTaking',medicineTaking.view);
+app.get('/medicineTaking2',medicineTaking2.view);
+app.get('/medicineTaking3',medicineTaking3.view);
+app.get('/medicineTakingConfirm',medicineTakingConfirm.view);
+app.get('/medicineTakingSymptoms',medicineTakingSymptoms.view);
 // Example route
 // app.get('/users', user.list);
 

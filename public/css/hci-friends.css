@@ -9,7 +9,10 @@
 	color: #CC00AA;
 }
 
-.friend{
-	max-width: 300px;
+.shortbutton{
+	max-width: 20%;
+}
 
+.longbutton{
+	max-width: 70%;
 }
