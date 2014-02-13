@@ -41,3 +41,31 @@
 		float:center;
 }
 
+.rxDescriptionCSS{
+
+
+}
+
+
+
+.span2{
+	width: 25%;
+
+	background-color: #c0c0c0;
+	float:left;
+
+}
+.span10{
+	width: 75%;
+	vertical-align: middle;
+	
+	float:right;
+	background-color: yellow
+	;
+}
+
+.iconClass{
+	height:100px;
+	width:100px;
+
+}
