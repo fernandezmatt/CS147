@@ -1,0 +1,43 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+.shortbutton{
+	max-width: 20%;
+}
+
+.longbutton{
+	max-width: 70%;
+}
+
+/*Brian's CSS additions for use on the prescription page */
+#medName{
+
+	
+}
+.titleHeading{
+	position: relative;
+	background-color: red;
+}
+
+#titleHeading2{
+	position: relative;
+	background-color: red;
+}
+
+#rx_primary{
+		position: relative;
+		/*background-image: url("../pictures/caduceus.jpg");*/
+		background-size: 500px;
+		background-image opacity: 0.2;
+		height: 500px;
+		float:center;
+}
+
