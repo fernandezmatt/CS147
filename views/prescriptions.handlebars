@@ -18,9 +18,62 @@
 </head>
 
 <body>
-	<a href="/">GO BACK</a>
-	<h2>Prescriptions Page</h2>
-	</body>
+	<div class="container" id="rx_primary">
+		<div class="titleHeading"><h2 style="text-align:center">Prescriptions Page</h2></div>
+		
+
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="#View1" data-toggle="tab">View 1</a></li>
+		  <li><a href="#View2" data-toggle="tab">View 2</a></li>
+		  <li><a href="#Schedule" data-toggle="tab">Schedule</a></li>
+		  <li><a href="#Refill" data-toggle="tab">Refill</a></li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			  <div class="tab-pane active" id="View1">
+			  		<h3> Heart Medicines </h3>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Ecotrin (Aspirin) 81 mg pill</button> <br>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Zestril (Lisinopril) 10 mg tablet</button> <br>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Inderal (Propranolol) 10 mg tablet</button> <br>
+					<h3> Prostate Medicines </h3>
+					<button id="medName" class="btn btn-primary btn-lg btn-block">Propecia (Finasteride) 5 mg tablet</button> <br>
+					<h3> Arthritis Medicines </h3>
+					<button id="medName" class="btn btn-primary btn-lg btn-block">Humira (Adalimumab) 2 mg injection</button> <br>
+					<button id="medName" class="btn btn-primary btn-lg btn-block">Motrin (Ibuprofen) 200 mg pill</button> <br>
+			  </div>
+			  <div class="tab-pane" id="View2">
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Ecotrin (Aspirin) 81 <br>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Humira (Adalimumab) 2 mg injection <br>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Motrin (Ibuprofen) 200 mg pill <br>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Propecia (Finasteride) 5 mg tablet <br>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Zestril (Lisinopril) 10 mg tablet <br>
+			  		<button id="medName" class="btn btn-primary btn-lg btn-block">Inderal (Propranolol) 10 mg tablet <br>
+
+			  </div>
+			  <div class="tab-pane" id="Schedule">
+				    <p>Medication Missed:<br>
+				    Rx1: 3<br>
+				    Rx2: 4<br>
+				    <br>
+				    Symptoms Reported:<br>
+				    Symptom1: 5<br>
+				    Symptom2: 15</p>
+			  </div>
+			  <div class="tab-pane" id="Refill">
+				    <p>Medication Missed:<br>
+				    Rx1: 3<br>
+				    Rx2: 4<br>
+				    <br>
+				    Symptoms Reported:<br>
+				    Symptom1: 5<br>
+				    Symptom2: 15</p>
+			  </div>
+		</div>
+
+		<a href="/">GO BACK</a>
+	</div>
+</body>
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/hci-friends.js"></script>
