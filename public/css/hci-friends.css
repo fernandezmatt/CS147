@@ -80,9 +80,22 @@
 }
 
 .col-xs-9{
-	height:0px;
+	height:60px;
 	border: solid #D1D0CE 1px;
 	text-align: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.col-xs-8{
+	height:60px;
+	border: solid #D1D0CE 1px;
+	text-align: left;
+}
+
+.col-xs-3{
+	height:60px;
+	border: solid #D1D0CE 1px;
+	text-align: center;
+
 }
