@@ -11,6 +11,10 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var prescriptions = require('./routes/prescriptions');
 var prescriptions2 = require('./routes/prescriptions2');
+var refillVerification = require('./routes/refillVerification');
+var refillVerification2 = require('./routes/refillVerification2');
+var refillVerification3 = require('./routes/refillVerification3');
+var refillVerificationConfirmation = require('./routes/refillVerificationConfirmation');
 var rxDescription = require('./routes/rxDescription');
 var providerInfo = require('./routes/providerInfo');
 var settings = require('./routes/settings');
@@ -20,6 +24,7 @@ var medicineTaking = require('./routes/medicineTaking');
 var medicineTaking2 = require('./routes/medicineTaking2');
 var medicineTaking3 = require('./routes/medicineTaking3');
 var medicineTakingConfirm = require('./routes/medicineTakingConfirm');
+var medicineTakingConfirmFinal = require('./routes/medicineTakingConfirmFinal');
 var medicineTakingSymptoms = require('./routes/medicineTakingSymptoms');
 // Example route
 // var user = require('./routes/user');
@@ -51,6 +56,10 @@ app.get('/', index.view);
 app.get('/prescriptions',prescriptions.view);
 app.get('/prescriptions2',prescriptions2.view);
 app.get('/rxDescription',rxDescription.view);
+app.get('/refillVerification',refillVerification.view);
+app.get('/refillVerification2',refillVerification2.view);
+app.get('/refillVerification3',refillVerification3.view);
+app.get('/refillVerificationConfirmation',refillVerificationConfirmation.view);
 app.get('/providerInfo',providerInfo.view);
 app.get('/settings',settings.view);
 app.get('/history',history.view);
@@ -59,6 +68,7 @@ app.get('/medicineTaking',medicineTaking.view);
 app.get('/medicineTaking2',medicineTaking2.view);
 app.get('/medicineTaking3',medicineTaking3.view);
 app.get('/medicineTakingConfirm',medicineTakingConfirm.view);
+app.get('/medicineTakingConfirmFinal',medicineTakingConfirmFinal.view);
 app.get('/medicineTakingSymptoms',medicineTakingSymptoms.view);
 // Example route
 // app.get('/users', user.list);
