@@ -65,7 +65,7 @@
 }
 
 .iconClass{
-	font-size: 20px;
+	font-size: 25px;
 	padding: 5px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -74,13 +74,13 @@
 }
 
 .col-xs-2{
-	height:80px;
+	height:60px;
 	border: solid #D1D0CE 1px;
 	text-align: center;	
 }
 
 .col-xs-9{
-	height:80px;
+	height:0px;
 	border: solid #D1D0CE 1px;
 	text-align: left;
 	padding-top: 20px;
