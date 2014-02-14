@@ -65,29 +65,22 @@
 }
 
 .iconClass{
-	height:100px;
-	width:100px;
+	font-size: 60px;
+	padding: 10px;
 
-}
 
-.row-fluid{
-
-	background-color: red;
-	display: inline-block;
 }
 
 .col-xs-2{
-	height:50px;
+	height:80px;
 	border: solid #D1D0CE 1px;
-	text-align: center;
-	padding-top: 12.5px;
-	padding-bottom: 12.5px;
-
+	text-align: center;	
 }
+
 .col-xs-9{
-	height:50px;
+	height:80px;
 	border: solid #D1D0CE 1px;
 	text-align: left;
-	padding-top: 12.5px;
-	padding-bottom: 12.5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
