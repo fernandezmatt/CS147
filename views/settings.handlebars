@@ -19,8 +19,8 @@
 
 <body>
 	<h2>Settings</h2>
-	<div>
-	<h4>Medication Confirmation</h4>
+
+<!-- 	<h4>Medication Confirmation</h4>
 <div class="radio">
   <label>
     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
@@ -39,8 +39,11 @@
     Each Pill Seperately
   </label>
 </div>
-<br />
+<br /> -->
 <h4>Common Symptoms</h4>
+{{#each Symptoms}}
+ <div> {{name}} </div>
+{{/each}}
 
 	<div class="btn-group btn-group-justified">
 		<a class="btn btn-primary btn-lg" href="/">Save Changes</a> <!-- NEED TO IMPLEMENT -->
