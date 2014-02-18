@@ -41,12 +41,19 @@
 </div>
 <br /> -->
 <h4>Common Symptoms</h4>
+<table class="table">
+
+
 {{#each Symptoms}}
- <div> {{name}} </div>
+<tr>
+  <td><h4>{{name}}</h4></td>
+  <td><button type="button" class="btn btn-danger">Delete</button></td>
+</tr>
 {{/each}}
+</table>
 
 	<div class="btn-group btn-group-justified">
-		<a class="btn btn-primary btn-lg" href="/">Save Changes</a> <!-- NEED TO IMPLEMENT -->
+		<a class="btn btn-success btn-lg" href="/">Add a Symptom</a> <!-- NEED TO IMPLEMENT -->
 		<a class="btn btn-primary btn-lg" href="/">Back</a>
 	</div>
 	</body>
