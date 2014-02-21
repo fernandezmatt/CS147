@@ -3,12 +3,22 @@
 		"UserName": "Annette",
 		"Doctor" : "Dr. Andrew Hoffman\n 1 Pharmacy Drive \nPalo Alto, CA 94305",
 		"Pharmacy": "CVS Pharmacy\n1 Pharmacy Drive \nPalo Alto, CA 94305",
-		"Symptoms": "Fever \nHeadache \nSore Throat"
+		"Symptoms": [
+			{"name": "Nausea"},
+			{"name": "Headache"},
+			{"name": "Sore Throat"},
+			{"name": "Fevers"}
+		]
 	},
 	{
 		"UserName": "Brian",
 		"Doctor" : "Dr. Steve Carey \n2 Chelsea Court \nSeaford, DE 19973",
 		"Pharmacy": "Walgreens Pharmacy \n1 Pharmacy Drive \nPalo Alto, CA 94305",
-		"Symptoms": "Nausea \nHeadache \nSore Throat"
+		"Symptoms": [
+			{"name": "Nausea"},
+			{"name": "Headache"},
+			{"name": "Sore Throat"},
+			{"name": "Fevers"}
+		]
 	}
 ]
