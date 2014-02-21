@@ -1,11 +1,10 @@
 {
 	"UserName": "Annette",
-	"Doctor" : "Dr. Andrew Hoffman\ntest",
+	"Doctor" : "Dr. Andrew Hoffman\n300 Pasteur Dr.\nA175 MC 5303\nStanford, CA 94305\nPhone: 650-723-6961",
 
-	"Pharmacy": "CVS Pharmacy",
+	"Pharmacy": "CVS Pharmacy\n855 El Camino Real\nPalo Alto, CA 94301\nPhone: 650-322-2554",
 		
 	"Symptoms": [
-		{"name": "Doug Engelbart"},
 		{"name": "Unusual tiredness"}, 
 		{"name": "Dizziness"}
 	]
