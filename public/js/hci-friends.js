@@ -5,23 +5,31 @@ $(document).ready(function() {
 	initializePage();
 })
 
-$(".friend a").click(listenerFunction);
-
 
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
 	console.log("Javascript connected!");
-}
 
-function listenerFunction(e){
-	e.preventDefault();
-	var oldText = $(this).text();
-	oldText = oldText.trim();
-	var newText = anagrammedName(oldText);
-	$(this).text(newText);
-}
+// function listenerFunction(e){
+	// e.preventDefault();
+	//var medName = $(this).closest('.project').attr('id');
 
+
+
+	$('#newProjectSubmitButton').click(function(e) {
+		console.log('clicked');
+		//var title = $('#title').val();
+
+
+	
+		// $.post('../../views/rxDescription', json, function() {
+		// 	window.location.href = '/'; // reload the page
+		// });
+	});
+// }
+
+}
 
 

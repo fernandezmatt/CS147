@@ -1,4 +1,20 @@
 // Get all of our friend data
+// exports.view = function(req, res){
+// 	res.render('rxDescription');
+// };
+
+var models = require('../models');
+
 exports.view = function(req, res){
-	res.render('rxDescription');
+	models.UserInfo
+		.find({"UserName": req.session.username})
+		.exec(renderName);
+
+function renderName(err,userData){
+ 	if(err) console.log(err);
+ 	console.log(userData);
+	res.render('rxDescription',userData[0].Medicine[0]);
+}
+
+
 };

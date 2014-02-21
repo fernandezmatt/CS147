@@ -7,7 +7,8 @@ var UserSchema = new Mongoose.Schema({
   "UserName": String,
   "Doctor": String,
   "Pharmacy": String,
-  "Symptoms": Array
+  "Symptoms": Array,
+  "Medicine": Array
 });
 
 exports.UserInfo = Mongoose.model('UserInfo', UserSchema);

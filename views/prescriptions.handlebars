@@ -112,7 +112,19 @@
 			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Motrin (Ibuprofen) 200 mg pill</button></a> <br>
 			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Propecia (Finasteride) 5 mg tablet</button></a> <br>
 			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Zestril (Lisinopril) 10 mg tablet</button></a> <br>
-			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Inderal (Propranolol) 10 mg tablet</button></a> <br>
+			  		<a href="rxDescription"><button id="newProjectSubmitButton" class="btn btn-primary btn-lg btn-block">Inderal (Propranolol) 10 mg tablet</button></a> <br>
+			  	
+			  		{{#each Medicine}}
+<!-- 					<tr>
+						  <td><h4>{{name}}</h4></td>
+						  <td><button type="button" class="btn btn-danger">Delete</button></td>
+						</tr> -->
+					
+						<div class="form-group"><a href="rxDescription"><button id="newProjectSubmitButton" class="btn btn-primary btn-lg btn-block">{{name}}</button></a></div> 
+						
+				
+				
+					{{/each}}
 			  </div>
 		</div>
 		<br>

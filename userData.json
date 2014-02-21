@@ -8,6 +8,11 @@
 			{"name": "Headache"},
 			{"name": "Sore Throat"},
 			{"name": "Fevers"}
+		],
+		"Medicine": [
+			{"name": "Tylenol", "phoentical":"[met-oh-proh-lawl]", "info": "A beta blocker medication that lowers blood pressure", "morning-time": "8am", "evening-time": "8pm", "food-info":"Do not take antacids within 2 hours of taking this drug", "last-refill":"Last filled 12/3/13","next-refill": "Refill expected 1/2/14", "warning": "dizziness possible"},
+			{"name": "Asprin", "phoentical":"[met-oh-proh-lawl]", "info": "A beta blocker medication that lowers blood pressure", "morning-time": "8am", "evening-time": "8pm", "food-info":"Do not take antacids within 2 hours of taking this drug","last-refill": "Last filled 12/3/13","next-refill": "Refill expected 1/2/14", "warning": "dizziness possible"}
+
 		]
 	},
 	{
@@ -19,6 +24,11 @@
 			{"name": "Headache"},
 			{"name": "Sore Throat"},
 			{"name": "Fevers"}
+		],
+		"Medicine": [
+			{"name": "Tylenol", "phoentical":"[met-oh-proh-lawl]", "info": "A beta blocker medication that lowers blood pressure", "morning-time": "8am", "evening-time": "8pm", "food-info":"Do not take antacids within 2 hours of taking this drug", "last-refill": "Last filled 12/3/13","next-refill": "Refill expected 1/2/14", "warning": "dizziness possible"},
+			{"name": "Asprin", "phoentical":"[met-oh-proh-lawl]", "info": "A beta blocker medication that lowers blood pressure", "morning-time": "8am", "evening-time": "8pm", "food-info":"Do not take antacids within 2 hours of taking this drug", "last-refill": "Last filled 12/3/13","next-refill": "Refill expected 1/2/14", "warning": "dizziness possible"}
+
 		]
 	}
 ]
