@@ -18,37 +18,20 @@
 </head>
 
 <body>
+  <div class="container">
 	<h2>Settings</h2>
 
-<!-- 	<h4>Medication Confirmation</h4>
-<div class="radio">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-    All Medicines Together
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-    Each Medicine Seperately
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-    Each Pill Seperately
-  </label>
-</div>
-<br /> -->
 <h4>Common Symptoms</h4>
-{{#each Symptoms}}
- <div> {{name}} </div>
-{{/each}}
+    <textarea class="form-control" rows="5">
+{{Symptoms}}
+    </textarea>
+
 
 	<div class="btn-group btn-group-justified">
 		<a class="btn btn-primary btn-lg" href="/">Save Changes</a> <!-- NEED TO IMPLEMENT -->
-		<a class="btn btn-primary btn-lg" href="/">Back</a>
+		<a class="btn btn-primary btn-lg" href="index">Back</a>
 	</div>
+</div>
 	</body>
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>

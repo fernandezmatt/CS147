@@ -8,6 +8,15 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+/////////////Mongo Additions/////////////////////////////////
+var mongoose = require('mongoose');
+var local_database_name = 'ABMUserInfo';
+var local_database_uri = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
+/////////////////////////////////////////////////////////////
+
+
 var index = require('./routes/index');
 var prescriptions = require('./routes/prescriptions');
 var prescriptions2 = require('./routes/prescriptions2');
@@ -26,6 +35,8 @@ var medicineTaking3 = require('./routes/medicineTaking3');
 var medicineTakingConfirm = require('./routes/medicineTakingConfirm');
 var medicineTakingConfirmFinal = require('./routes/medicineTakingConfirmFinal');
 var medicineTakingSymptoms = require('./routes/medicineTakingSymptoms');
+var login = require('./routes/login');
+var user = require('./routes/user');
 // Example route
 // var user = require('./routes/user');
 
@@ -52,7 +63,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+app.get('/index', index.view);
 app.get('/prescriptions',prescriptions.view);
 app.get('/prescriptions2',prescriptions2.view);
 app.get('/rxDescription',rxDescription.view);
@@ -70,6 +81,10 @@ app.get('/medicineTaking3',medicineTaking3.view);
 app.get('/medicineTakingConfirm',medicineTakingConfirm.view);
 app.get('/medicineTakingConfirmFinal',medicineTakingConfirmFinal.view);
 app.get('/medicineTakingSymptoms',medicineTakingSymptoms.view);
+app.get('/',login.view);
+app.get('/user_login', user.login);
+app.get('/user_logout', user.logout);
+app.get('/users', user.list);
 // Example route
 // app.get('/users', user.list);
 
