@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		<div class="jumbotron">
-			<h2>Please confirm the medicines you are taking this morning</h2>
+			<h2>Please confirm your medicines</h2>
 		</div>
 
 		<table class="table">
@@ -30,8 +30,9 @@
 				<th>Image</th>
 				<th>Confirm</th>
 			</tr>
+			{{#each Medicine}}
 			<tr>
-				<td>Rx 1</td>
+				<td>{{name}}</td>
 				<td>1</td>
 				<td></td>
 				<td>
@@ -40,6 +41,7 @@
 					</label>
 				</td>
 			</tr>
+			{{/each}}
 			<tr>
 				<td>Rx 2</td>
 				<td>2</td>
@@ -63,7 +65,7 @@
 		</table>
 
 		<div class="btn-group btn-group-justified">
-			<a class="btn btn-primary btn-sm" href="medicineTaking">BACK</a>
+			<a class="btn btn-primary btn-lg" href="medicineTaking">BACK</a>
 			<a class="btn btn-success btn-lg" href="medicineTaking3">CONTINUE</a>
 		</div>
 	</div>

@@ -94,11 +94,3 @@
 	border: solid #D1D0CE 1px;
 	text-align: center;
 }
-
-.table th, .table td { 
-     border-top: none; 
- }
-
- table td {
-    border-top: none;
-}

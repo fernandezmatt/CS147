@@ -23,33 +23,17 @@
 			<h2>Select your symptoms</h2>
 		</div>
 		<div class="container">
+			{{#each Symptoms}}
 			<div class="checkbox">
   				<label>
     				<input type="checkbox" value="">
-    				Symptom1
+    				{{name}}
   				</label>
 			</div>
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				Symptom2
-  				</label>
-			</div>
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				Symptom3
-  				</label>
-			</div>
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				Symptom4
-  				</label>
-			</div>									
+			{{/each}}							
 		</div>
 		<div class="btn-group btn-group-justified">
-			<a class="btn btn-primary btn-sm" href="medicineTaking3">BACK</a>
+			<a class="btn btn-primary btn-lg" href="medicineTaking3">BACK</a>
 			<a class="btn btn-success btn-lg" href="medicineTakingConfirmFinal">CONTINUE</a>
 		</div>
 	</div>
