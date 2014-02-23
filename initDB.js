@@ -13,6 +13,7 @@
 
 var mongoose = require('mongoose');
 var models   = require('./models');
+var medicine = require('./medicine');
 //var medicine = require('./medicine');
 
 // Connect to the Mongo database, whether locally or on Heroku
@@ -27,7 +28,7 @@ mongoose.connect(database_uri);
 
 // Step 1: load the JSON data
 var userData_json = require('./userData.json');
-//var medicineData_json = require('./medicineData.json');
+var medicineData_json = require('./medicineData.json');
 
 // Step 2: Remove all existing documents
 models.UserInfo
@@ -55,37 +56,37 @@ function onceClear(err) {
         console.log('DONE1');
         // The script won't terminate until the 
         // connection to the database is closed
-        mongoose.connection.close()
+       // mongoose.connection.close()
       }
     });
   }
 }
 
 
-// medicine.MedInfo
-//   .find()
-//   .remove()
-//   .exec(onceClearMed);
+medicine.MedInfo
+  .find()
+  .remove()
+  .exec(onceClearMed);
 
-// function onceClearMed(err) {
-//   if(err) console.log(err);
-//   var to_save_count = medicineData_json.length;
-//   for(var i=0; i<medicineData_json.length; i++) {
-//     var json = medicineData_json[i];
-//     var entry = new medicine.MedInfo(json);
+function onceClearMed(err) {
+  if(err) console.log(err);
+  var to_save_count = medicineData_json.length;
+  for(var i=0; i<medicineData_json.length; i++) {
+    var json = medicineData_json[i];
+    var entry = new medicine.MedInfo(json);
 
-//     entry.save(function(err, entry) {
-//       if(err) console.log(err);
+    entry.save(function(err, entry) {
+      if(err) console.log(err);
 
-//       to_save_count--;
-//       console.log(to_save_count + ' left to save');
-//       if(to_save_count <= 0) {
-//         console.log('DONE');
-//         // The script won't terminate until the 
-//         // connection to the database is closed
-//         mongoose.connection.close()
-//       }
-//     });
-//   }
-//}
+      to_save_count--;
+      console.log(to_save_count + ' left to save');
+      if(to_save_count <= 0) {
+        console.log('DONE');
+        // The script won't terminate until the 
+        // connection to the database is closed
+        mongoose.connection.close()
+      }
+    });
+  }
+}
 

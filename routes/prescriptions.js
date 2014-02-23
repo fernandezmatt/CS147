@@ -17,3 +17,19 @@ function renderName(err,userData){
 }
 };
 
+// exports.projectInfo = function(req, res) { 
+//   var projectID = req.params.id;
+//   console.log(projectID);
+//   models.Project
+//     .find({"_id":projectID})
+//     .exec(afterQuery);
+
+//   // query for the specific project and
+//   // call the following callback
+
+//   function afterQuery(err, projects) {
+//     if(err) console.log(err);
+//     console.log("asdadsadsasddsadsasdadadasdasd");
+//     res.json(projects[0]);
+//   }
+// }

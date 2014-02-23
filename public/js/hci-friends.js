@@ -9,27 +9,47 @@ $(document).ready(function() {
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {
-	console.log("Javascript connected!");
+// function initializePage() {
+// 	console.log("Javascript connected!");
+// 	$("a.newProjectSubmitButton").click(projectClick);
 
-// function listenerFunction(e){
-	// e.preventDefault();
-	//var medName = $(this).closest('.project').attr('id');
-
-
-
-	$('#newProjectSubmitButton').click(function(e) {
-		console.log('clicked');
-		//var title = $('#title').val();
-
-
-	
-		// $.post('../../views/rxDescription', json, function() {
-		// 	window.location.href = '/'; // reload the page
-		// });
-	});
+// 	function projectClick(e) {  
+// 		// e.preventDefault();
+// 		var projectTitle = $(this).find("p").text();
+// 		$(this).text("Please Wait..."+projectTitle);
+// 		console.log(projectTitle);
+// 	}
 // }
 
+function initializePage() {
+	console.log("Javascript connected!");
+	// $("a.newProjectSubmitButton").click(projectClick);
+	$("a.newProjectSubmitButton").click(function(e){
+
+	// function projectClick(e) {  
+		// e.preventDefault();
+		var projectTitle = $(this).find("p").text();
+		$(this).text("Please Wait..."+projectTitle);
+		console.log(projectTitle);
+		var url_call = 'rxDescription';
+
+		function addMed(project_json){
+		
+			var new_html = '<p>'+projectTitle+" aweasd"+'</p>';
+			var add_div = $('.details'+ '#'+projectTitle);
+			add_div.html(new_html);
+
+				// $.post('rxDescription', function() {
+				// 	window.location.href = 'rxDescription';
+				// });
+			console.log(project_json);
+		}
+		$.get(url_call, addMed);
+		//console.log("?????????"+project_json);
+
+	});
 }
+
+
 
 

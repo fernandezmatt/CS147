@@ -107,23 +107,9 @@
 						</div>
 			  </div>
 			  <div class="tab-pane" id="View2">
-			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Ecotrin (Aspirin) 81 </button></a><br>
-			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Humira (Adalimumab) 2 mg injection</button></a> <br>
-			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Motrin (Ibuprofen) 200 mg pill</button></a> <br>
-			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Propecia (Finasteride) 5 mg tablet</button></a> <br>
-			  		<a href="rxDescription"><button id="medName" class="btn btn-primary btn-lg btn-block">Zestril (Lisinopril) 10 mg tablet</button></a> <br>
-			  		<a href="rxDescription"><button id="newProjectSubmitButton" class="btn btn-primary btn-lg btn-block">Inderal (Propranolol) 10 mg tablet</button></a> <br>
-			  	
-			  		{{#each Medicine}}
-<!-- 					<tr>
-						  <td><h4>{{name}}</h4></td>
-						  <td><button type="button" class="btn btn-danger">Delete</button></td>
-						</tr> -->
-					
-						<div class="form-group"><a href="rxDescription"><button id="newProjectSubmitButton" class="btn btn-primary btn-lg btn-block">{{name}}</button></a></div> 
-						
-				
-				
+					{{#each Medicine}}
+						<a href="rxDescription" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a>
+						<div class="details" id="{{name}}">?</div>
 					{{/each}}
 			  </div>
 		</div>
