@@ -17,9 +17,6 @@ var MedSchema = new Mongoose.Schema({
 		"Warning": String
 });
 
-// exports.medicine = {
-// 	model: Mongoose.model('MedInfo', MedSchema),
-// 	schema: MedSchema
-// };
+
 exports.MedInfo = Mongoose.model('MedInfo', MedSchema);
 

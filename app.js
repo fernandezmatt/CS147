@@ -66,7 +66,7 @@ if ('development' == app.get('env')) {
 app.get('/index', index.view);
 app.get('/prescriptions',prescriptions.view);
 app.get('/prescriptions2',prescriptions2.view);
-app.get('/rxDescription',rxDescription.view);
+app.get('/rxDescription/:name',rxDescription.view);
 app.get('/refillVerification',refillVerification.view);
 app.get('/refillVerification2',refillVerification2.view);
 app.get('/refillVerification3',refillVerification3.view);
@@ -85,6 +85,8 @@ app.get('/',login.view);
 app.get('/user_login', user.login);
 app.get('/user_logout', user.logout);
 app.get('/users', user.list);
+app.post('/settings/new', settings.addSymptom);
+app.post('/settings/delete', settings.deleteSymptom);
 // Example route
 // app.get('/users', user.list);
 

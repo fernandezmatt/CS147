@@ -5,50 +5,31 @@ $(document).ready(function() {
 	initializePage();
 })
 
-
-/*
- * Function that is called when the document is ready.
- */
-// function initializePage() {
-// 	console.log("Javascript connected!");
-// 	$("a.newProjectSubmitButton").click(projectClick);
-
-// 	function projectClick(e) {  
-// 		// e.preventDefault();
-// 		var projectTitle = $(this).find("p").text();
-// 		$(this).text("Please Wait..."+projectTitle);
-// 		console.log(projectTitle);
-// 	}
-// }
-
 function initializePage() {
-	console.log("Javascript connected!");
-	// $("a.newProjectSubmitButton").click(projectClick);
-	$("a.newProjectSubmitButton").click(function(e){
+	$('#newSymptomSubmitButton').click(function(e) {
+		var addedSymptom = $('#new-project-form #addSymptom').val();
+		console.log("fucccccck");
+		var json = {
+			'addedSymptom': addedSymptom
+		};
+		$.post('/settings/new', json, function() {
+			window.location.href = '/settings'; // reload the page
+		});
+	});
 
-	// function projectClick(e) {  
-		// e.preventDefault();
-		var projectTitle = $(this).find("p").text();
-		$(this).text("Please Wait..."+projectTitle);
-		console.log(projectTitle);
-		var url_call = 'rxDescription';
-
-		function addMed(project_json){
-		
-			var new_html = '<p>'+projectTitle+" aweasd"+'</p>';
-			var add_div = $('.details'+ '#'+projectTitle);
-			add_div.html(new_html);
-
-				// $.post('rxDescription', function() {
-				// 	window.location.href = 'rxDescription';
-				// });
-			console.log(project_json);
-		}
-		$.get(url_call, addMed);
-		//console.log("?????????"+project_json);
-
+	$('.deleteSymptom').click(function(e) {
+		var deleteSymptom = $('.symptomNameinHeader').val();
+		//var deleteSymptom = $(this).text();
+		console.log(deleteSymptom);
+		// var json = {
+		// 	'deleteSymptom': deleteSymptom
+		// };
+		// $.post('/settings/delete', json, function() {
+		// 	window.location.href = '/settings'; // reload the page
+		// });
 	});
 }
+
 
 
 

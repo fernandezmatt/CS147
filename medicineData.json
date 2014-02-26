@@ -20,5 +20,16 @@
 		"Last-refill":"Last filled 12/3/13",
 		"Next-refill": "Refill expected 1/2/14",
 		"Warning": "dizziness possible"
+	},
+	{
+		"MedName": "Ibuprofen",
+		"Phoentical": "[met-oh-proh-lawl]",
+		"Info": "A beta blocker medication that lowers blood pressure",
+		"Morning-time": "8am",
+		"Evening-time": "8pm",
+		"Food-info":"Do not take antacids within 2 hours of taking this drug",
+		"Last-refill":"Last filled 12/3/13",
+		"Next-refill": "Refill expected 1/2/14",
+		"Warning": "dizziness possible"
 	}
 ]

@@ -1,6 +1,5 @@
 
 var Mongoose = require('mongoose');
-//var definition = require('mongoose').model('medicine.js');
 
 var UserSchema = new Mongoose.Schema({
   // fields are defined here

@@ -27,17 +27,25 @@
 
 
 {{#each Symptoms}}
-<tr>
-  <td><h4>{{name}}</h4></td>
-  <td><button type="button" class="btn btn-danger pull-right">Delete</button></td>
+<tr class="deleteSymptom" id="{{name}}">
+  <td><h4 id="symptomNameinHeader">{{name}}</h4></td>
+  <td><a href="settings/delete"  ><button type="button" class="btn btn-danger pull-right">Delete</button></a></td>
 </tr>
 {{/each}}
 </table>
 
-	<div class="btn-group btn-group-justified">
-		<a class="btn btn-success btn-lg" href="/">Add a Symptom</a> <!-- NEED TO IMPLEMENT -->
-		<a class="btn btn-primary btn-lg" href="index">Back</a>
+  <form id="new-project-form" role="form">
+    <div class="form-group">
+      <label for="addSymptom">Add New Symptom</label>
+      <textarea type="text" class="form-control" id="addSymptom" rows="1" placeholder="Add Symptom"></textarea>
+    </div>
+    <button id="newSymptomSubmitButton" type="button" class="btn btn-success">Add</button>
+  </form>
 
+  <br>
+  <br>
+	<div class="btn-group btn-group-justified">
+		<a class="btn btn-primary btn-lg" href="index">Back</a>
 	</div>
 </div>
 	</body>
