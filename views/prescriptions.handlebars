@@ -20,18 +20,18 @@
 <body>
 	<div class="container" id="rx_primary">
 		<div class="jumbotron">
-			<div ><h2 style="text-align:center">Prescriptions</h2></div>
+			<div ><h2>Prescriptions</h2></div>
 		</div>
 		
 
 		<!-- Nav tabs -->
 		<ul class="nav nav-tabs">
-		  <li class="active"><a href="#View1" data-toggle="tab">View 1</a></li>
-		  <li><a href="#View2" data-toggle="tab">View 2</a></li>
+		  <li><a href="#View1" data-toggle="tab">View 1</a></li>
+		  <li class="active"><a href="#View2" data-toggle="tab">View 2</a></li>
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
-			  <div class="tab-pane active" id="View1">
+			  <div class="tab-pane" id="View1">
 			  		<h3> Heart Medicines </h3>
 				  		<div class="btn-group btn-lg btn-primary btn-block" style="border-radius:10px">
 							  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="color:white">
@@ -106,7 +106,7 @@
 							  </ul>
 						</div>
 			  </div>
-			  <div class="tab-pane" id="View2">
+			  <div class="tab-pane active" id="View2">
 					{{#each Medicine}}
 						<a href="rxDescription/{{name}}" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a>
 <!-- 						<tr>
@@ -116,11 +116,14 @@
 					{{/each}}
 			  </div>
 			  <br>
-				<!-- Button trigger modal -->
-				<button style="clear" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-				  Add Prescription
-				</button>
 
+				<!-- Button trigger modal -->
+			<div class="btn-group btn-group-justified">
+				<a style="clear" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+				  Add Prescription
+				</a>
+				<a href="index" class="btn btn-primary btn-lg">Back</button></a>
+			</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -177,8 +180,6 @@
 				  </div>
 				</div>
 		</div>
-		<br>
-		<a href="index"><button class="btn btn-inverse btn-sm">HOME</button></a>
 	</div>
 </body>
 	<script src="js/jquery-1.11.0.js"></script>

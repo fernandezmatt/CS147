@@ -18,9 +18,13 @@
 </head>
 
 <body>
+	<div class="container our-header">
+		<div class="jumbotron">
+			<h2>Provider Info</h2>
+		</div>
+	</div>
 
-	<h2>Provider Info</h2>
-	<div>
+	<div class="container">
 		<h2>Doctor</h2>
 <!-- 		<a class="btn btn-primary" href="javascript:editDoctor()">Edit</a> 
  -->		<textarea disabled="disabled" name="doctor" class="form-control" rows="5">
@@ -32,22 +36,23 @@
  -->		<textarea disabled="disabled" name="pharmacy" class="form-control" rows="4">
 {{Pharmacy}}
 		</textarea>
-	</div>
+	
 	<br />
 	<div class="btn-group btn-group-justified">
  		<!-- <a class="btn btn-primary btn-lg" href="/">Save Changes</a> <!-- NEED TO IMPLEMENT --> 
  		<a class="btn btn-primary btn-lg" href="index">Back</a>
 	</div>
+	</div>
 	</body>
 
     <script type="text/javascript">
-        function editDoctor(){
-            document.getElementsByName("doctor")[0].disabled=false;
-        }
-        function editPharmacy(){
-            document.getElementsByName("pharmacy")[0].disabled=false;
-        }
-    </script>
+    //     function editDoctor(){
+    //         document.getElementsByName("doctor")[0].disabled=false;
+    //     }
+    //     function editPharmacy(){
+    //         document.getElementsByName("pharmacy")[0].disabled=false;
+    //     }
+    // </script>
 
 
 	<script src="js/jquery-1.11.0.js"></script>

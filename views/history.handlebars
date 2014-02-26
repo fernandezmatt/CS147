@@ -18,13 +18,19 @@
 </head>
 
 <body>
-	<h2>History</h2>
+
+  <div class="container our-header">
+    <div class="jumbotron">
+      <h2>History</h2>
+    </div>
+  </div>
 
 <!-- Nav tabs -->
+<div class="container">
 <ul class="nav nav-tabs">
   <li class="active"><a href="#1month" data-toggle="tab">Last Month</a></li>
-  <li><a href="#3months" data-toggle="tab">Last 3 Months</a></li>
-  <li><a href="#6months" data-toggle="tab">Last 6 Months</a></li>
+  <li><a href="#3months" data-toggle="tab">3 Months</a></li>
+  <li><a href="#6months" data-toggle="tab">6 Months</a></li>
 </ul>
 
 <!-- Tab panes -->
@@ -62,12 +68,10 @@
     {{name}}: 8<br>
     {{/each}}</p>
   </div>
-</div>
-
 	<div class="btn-group btn-group-justified">
 		<a class="btn btn-primary btn-lg" href="index">Back</a>
 	</div>
-
+</div>
 	</body>
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>

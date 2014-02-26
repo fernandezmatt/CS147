@@ -18,10 +18,14 @@
 </head>
 
 <body>
-  <div class="container">
-	<h2>Settings</h2>
+  <div class="container our-header">
+    <div class="jumbotron">
+      <h2>Settings / Symptoms</h2>
+    </div>
+  </div>
 
-<h4>Common Symptoms</h4>
+<div class="container our-header">
+  <h2>Common Symptoms</h2>
 
 <table class="table">
 
@@ -35,13 +39,14 @@
 </table>
 
   <form id="new-project-form" role="form">
-    <div class="form-group">
-      <label for="addSymptom">Add New Symptom</label>
-      <textarea type="text" class="form-control" id="addSymptom" rows="1" placeholder="Add Symptom"></textarea>
+    <label for="addSymptom">Add New Symptom</label>
+    <div class="input-group">
+      
+      <input type="text" class="form-control" id="addSymptom" placeholder="Symptom Name"></input>
+      <span class="input-group-btn">
+        <button id="newSymptomSubmitButton" type="button" class="btn btn-success">Add</button>
+        </span>
     </div>
-    <button id="newSymptomSubmitButton" type="button" class="btn btn-success">Add</button>
-  </form>
-
   <br>
   <br>
 	<div class="btn-group btn-group-justified">
