@@ -109,8 +109,73 @@
 			  <div class="tab-pane" id="View2">
 					{{#each Medicine}}
 						<a href="rxDescription/{{name}}" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a>
+<!-- 						<tr>
+						  <td><a href="rxDescription/{{name}}" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a></td>
+						  <td><button type="button" class="btn btn-danger pull-right deleteSymptom" id="{{name}}">Refill</button></td>
+						</tr> -->
 					{{/each}}
 			  </div>
+			  <br>
+				<!-- Button trigger modal -->
+				<button style="clear" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				  Add Prescription
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Add Prescription</h4>
+				      </div>
+				      <div class="modal-body">
+				        	  <form id="new-project-form" role="form">
+							    <div class="form-group">
+							      <label for="MedName">Medicine Name:</label>
+							      <input type="text" class="form-control" id="MedName" placeholder="Medicine Name">
+							    </div>
+							    <div class="form-group">
+							      <label for="Phoentical">Phoentical</label>
+							      <input type="text" class="form-control" id="Phoentical" placeholder="Phoentical">
+							    </div>
+							    <div class="form-group">
+							      <label for="Info">Information</label>
+							      <input type="text" class="form-control" id="Info" placeholder="This is my morning heart medicine">
+							    </div>
+							    <div class="form-group">
+							      <label for="Morning-time">Time for Morning Reminder</label>
+							      <textarea type="text" class="form-control" id="Morning-time" rows="1" placeholder="8 AM"></textarea>
+							    </div>
+							    <div class="form-group">
+							      <label for="Evening-time">Time for Evening Reminder</label>
+							      <textarea type="text" class="form-control" id="Evening-time" rows="1" placeholder="8 PM"></textarea>
+							    </div>
+							    <div class="form-group">
+							      <label for="Food-info">Food Information</label>
+							      <textarea type="text" class="form-control" id="Food-info" rows="1" placeholder="Do not take within 2 hours of eating"></textarea>
+							    </div>
+							    <div class="form-group">
+							      <label for="Last-refill">Last Refill</label>
+							      <textarea type="text" class="form-control" id="Last-refill" rows="1" placeholder="12/3/13"></textarea>
+							    </div>
+							    <div class="form-group">
+							      <label for="Next-refill">Next Refill</label>
+							      <textarea type="text" class="form-control" id="Next-refill" rows="1" placeholder="2/23/13"></textarea>
+							    </div>
+							    <div class="form-group">
+							      <label for="Warning">Warnings</label>
+							      <textarea type="text" class="form-control" id="Warning" rows="1" placeholder="Dizziness possible"></textarea>
+							    </div>
+							  </form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary" id="newMedicineSubmitButton">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 		</div>
 		<br>
 		<a href="index"><button class="btn btn-inverse btn-sm">HOME</button></a>

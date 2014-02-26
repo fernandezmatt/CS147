@@ -87,6 +87,8 @@ app.get('/user_logout', user.logout);
 app.get('/users', user.list);
 app.post('/settings/new', settings.addSymptom);
 app.post('/settings/delete', settings.deleteSymptom);
+app.post('/prescriptions/new', prescriptions.addPrescription);
+
 // Example route
 // app.get('/users', user.list);
 
