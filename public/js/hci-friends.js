@@ -8,7 +8,6 @@ $(document).ready(function() {
 function initializePage() {
 	$('#newSymptomSubmitButton').click(function(e) {
 		var addedSymptom = $('#new-project-form #addSymptom').val();
-		console.log("fucccccck");
 		var json = {
 			'addedSymptom': addedSymptom
 		};
@@ -18,15 +17,13 @@ function initializePage() {
 	});
 
 	$('.deleteSymptom').click(function(e) {
-		var deleteSymptom = $('.symptomNameinHeader').val();
-		//var deleteSymptom = $(this).text();
-		console.log(deleteSymptom);
-		// var json = {
-		// 	'deleteSymptom': deleteSymptom
-		// };
-		// $.post('/settings/delete', json, function() {
-		// 	window.location.href = '/settings'; // reload the page
-		// });
+		var deleteSymptom = $(this).attr('id');
+		var json = {
+			'deleteSymptom': deleteSymptom
+		};
+		$.post('/settings/delete', json, function() {
+			window.location.href = '/settings'; // reload the page
+		});
 	});
 }
 

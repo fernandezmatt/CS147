@@ -25,19 +25,12 @@ exports.addSymptom = function(req, res) {
 };
 
 exports.deleteSymptom = function(req, res) {
-   	var form_data = req.params.id;
-   	console.log(req);
+   	var form_data = req.body;
 	var query = {"UserName": req.session.username};
-	// models.UserInfo.findOneAndUpdate(query,{$remove:{"Symptoms":{name: form_data.deleteSymptom}}},afterRemoving);
-  // find the project and remove it
-  // YOU MUST send an OK response w/ res.send();
-    models.UserInfo
-    .find({"UserName": req.session.username})
-    .remove({"Symptoms":{name: "form_data.deleteSymptom"}})
-    .exec(afterRemoving);
+    models.UserInfo.findOneAndUpdate(query,{$pull:{"Symptoms":{name: form_data.deleteSymptom}}},{upsert:false},afterRemoving);
 
     function afterRemoving(err){
-      if(err) {console.log(err); res.send(500)}
+      if(err) {console.log(err); res.send(500)};
       res.send();
     }
 }

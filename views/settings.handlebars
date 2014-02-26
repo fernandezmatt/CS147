@@ -27,9 +27,9 @@
 
 
 {{#each Symptoms}}
-<tr class="deleteSymptom" id="{{name}}">
-  <td><h4 id="symptomNameinHeader">{{name}}</h4></td>
-  <td><a href="settings/delete"  ><button type="button" class="btn btn-danger pull-right">Delete</button></a></td>
+<tr>
+  <td><h4 class="symptomNameinHeader" id="{{name}}">{{name}}</h4></td>
+  <td><a  ><button type="button" class="btn btn-danger pull-right deleteSymptom" id="{{name}}">Delete</button></a></td>
 </tr>
 {{/each}}
 </table>
