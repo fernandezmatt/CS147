@@ -23,14 +23,40 @@
 			<h2>Select your symptoms</h2>
 		</div>
 		<div class="container">
+			
+		<table class="table" style="font-size:large;float:center">
+			<tr>
+				<th class="col-sm-1">Confirm</th>
+				<th class="col-sm-2">Symptom Name</th>
+				<th class="col-sm-1">Mild</th>
+				<th class="col-sm-1">Moderate</th>
+				<th class="col-sm-1">Severe</th>
+			</tr>
 			{{#each Symptoms}}
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				{{name}}
-  				</label>
-			</div>
-			{{/each}}							
+			<tr>
+				<td>
+					<label class="checkbox-inline">
+  						<input type="checkbox" id="InlineCheckbox1" value="option1">
+					</label></td>
+				<td>{{name}}</td>
+				<td>
+					<label class="radio-inline">
+					  <input type="radio" name="Radios{{name}}" id="Radio1" value="option1">
+					</label>
+				</td>
+				<td>
+					<label class="radio-inline text-center">
+					  <input type="radio" name="Radios{{name}}" id="radio2" value="option2" checked>
+					</label>
+				</td>
+				<td>
+					<label class="radio-inline">
+					  <input type="radio" name="Radios{{name}}" id="radio3" value="option3">
+					</label>
+				</td>
+			</tr>
+			{{/each}}
+			</table>							
 		</div>
 		<div class="btn-group btn-group-justified">
 			<a class="btn btn-primary btn-lg" href="medicineTaking3">BACK</a>

@@ -10,8 +10,8 @@
 			{"name": "Fevers"}
 		],
 		"Medicine": [
-			 {"name": "Tylenol"},
-			 {"name": "Asprin"}
+			 {"name": "Tylenol", "quantity": "2", "image_location": "/pictures/pill1.jpg"},
+			 {"name": "Asprin", "quantity": "1", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	},
 	{
@@ -25,9 +25,9 @@
 			{"name": "Fevers"}
 		],
 		"Medicine": [
-			 {"name": "Tylenol"},
-			 {"name": "Ibuprofen"},
-			 {"name": "Asprin"}
+			 {"name": "Tylenol", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
+			 {"name": "Ibuprofen", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Asprin", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	}
 ]
