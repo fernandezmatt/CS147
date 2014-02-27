@@ -108,24 +108,19 @@
 			  </div>
 			  <div class="tab-pane active" id="View2">
 			  		<br>
-					{{#each Medicine}}
-<!-- 						<div class="row">
-							  <div class="col-xs-8"><a href="rxDescription/{{name}}" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a> </div>
-							    <a href="refillVerification"><button type="button" class="pull-right btn btn-success "><p>Refill</p></button> </a>
-						</div> -->
-						<br>
+					{{#each Medicine}}				
 						<tr>
 						  <td ><a href="rxDescription/{{name}}" style="width:75%" class="newProjectSubmitButton btn btn-primary btn-lg pull-left"><p>{{name}}</p></a> <a href="refillVerification" style="width:20%" class=" btn btn-success btn-lg pull-right" ><p>Refill</p></a> </td>
-
 						  <br>
-
+						  <br>
+						  <br>
 						</tr>
 						<br>
 
 					{{/each}}
 			  </div>
 			  <br>
-<br>
+			  <br>
 				<!-- Button trigger modal -->
 			<div class="btn-group btn-group-justified">
 				<a style="clear" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
