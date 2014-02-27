@@ -65,7 +65,7 @@
 
 .col-xs-2{
 	height:60px;
-	border: solid #D1D0CE 1px;
+/*	border: solid #D1D0CE 1px;*/
 	text-align: center;	
 }
 
@@ -79,7 +79,7 @@
 
 .col-xs-8{
 	height:60px;
-	border: solid #D1D0CE 1px;
+/*	border: solid #D1D0CE 1px;*/
 	text-align: left;
 }
 

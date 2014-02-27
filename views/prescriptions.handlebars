@@ -107,12 +107,15 @@
 						</div>
 			  </div>
 			  <div class="tab-pane active" id="View2">
+			  		<br>
 					{{#each Medicine}}
-						<a href="rxDescription/{{name}}" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a>
-<!-- 						<tr>
-						  <td><a href="rxDescription/{{name}}" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a></td>
-						  <td><button type="button" class="btn btn-danger pull-right deleteSymptom" id="{{name}}">Refill</button></td>
-						</tr> -->
+						<div class="row">
+							  <div class="col-xs-8"><a href="rxDescription/{{name}}" class="newProjectSubmitButton btn btn-primary btn-lg btn-block"><p>{{name}}</p></a> </div>
+							    <div class="col-xs-2 pull-right"><a href="rxDescription/{{name}}" class=" btn btn-success btn-lg btn-block"><p>Refill</p></a> </div>
+
+							 <!-- <a href="refillVerification"><button class="col-xs-2 btn btn-success pull-right" style="margin-right:20px"> Refill</button> -->
+						</div>
+
 					{{/each}}
 			  </div>
 			  <br>
