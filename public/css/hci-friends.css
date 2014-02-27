@@ -19,14 +19,15 @@
 
 /*Brian's CSS additions for use on the prescription page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5*/
 
+
 .titleHeading{
 	position: relative;
-	background-color: red;
+	background-color: #123940;
 }
 
-#titleHeading2{
-	position: relative;
-	background-color: red;
+.titleFont{
+
+	color: #298291;
 }
 
 #rx_primary{
