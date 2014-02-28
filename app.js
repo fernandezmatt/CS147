@@ -37,6 +37,7 @@ var medicineTakingConfirmFinal = require('./routes/medicineTakingConfirmFinal');
 var medicineTakingSymptoms = require('./routes/medicineTakingSymptoms');
 var login = require('./routes/login');
 var user = require('./routes/user');
+var about = require('./routes/about');
 // Example route
 // var user = require('./routes/user');
 
@@ -88,6 +89,7 @@ app.get('/users', user.list);
 app.post('/settings/new', settings.addSymptom);
 app.post('/settings/delete', settings.deleteSymptom);
 app.post('/prescriptions/new', prescriptions.addPrescription);
+app.get('/about', about.view);
 
 // Example route
 // app.get('/users', user.list);

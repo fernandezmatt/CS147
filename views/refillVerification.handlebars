@@ -17,22 +17,37 @@
     <![endif]-->        
 <Ad/head>
 
-<body>
+<!-- <body>
 	<div class="container">
 		<div class="jumbotron">
 			<h2>Refill from the following pharmacy?</h2>
+		</div> -->
+<body class="titleFont">
+<div class="container pageBackground">
+	<div class="jumbotron titleHeading">
+		<a class="glyphicon glyphicon-home iconClass pull-left" href="/index" style="color:#3ab9cf; margin-top:-30px; margin-left:-25px"> </a>
+		
+		<div class="dropdown" style="color:#a5e4ff">
+		<a class="glyphicon glyphicon-th-list iconClass pull-right" data-toggle="dropdown" href="#" style="color:#3ab9cf; margin-top:-30px; margin-right:-25px"> </a>
+
+						  <li class="dropdown-menu pull-right" style="background-color:#1a525c">
+						    <a href="about" style="text-align:center; color:#a5e4ff"><p>About</p></a>
+						    <br>
+						    <a href="/user_logout" style="text-align:center; color:#a5e4ff"><p>Logout</p></a>
+						  </li>
 		</div>
+<h3 style="text-align:center; margin-top:-10px">Refill from the following pharmacy?</h3>
+	</div>	
 		<div>
 			<p>{{Pharmacy}}</p>
 		</div>
 		<br>
 		<div class="container">
 			<div class="btn-group btn-group-justified">
-				<!-- <a class="btn btn-danger btn-lg" href="refillVerification2">Choose Another Pharmacy</a> -->
+				<a class="btn btn-danger" href="refillVerification2">Different Pharmacy</a>
 				<a class="btn btn-success btn-lg" href="refillVerification3">YES</a>
 			</div>	
-			<br>
-			<a href="index"><button class="btn btn-inverse btn-sm">HOME</button></a>						
+			<br>					
 		</div>
 	</div>
 </body>

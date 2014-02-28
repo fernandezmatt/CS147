@@ -17,21 +17,37 @@
     <![endif]-->        
 </head>
 
-<body class="titleFont">
+<!-- <body class="titleFont">
 	<div class="container pageBackground" id="rx_primary">
 		<div class="jumbotron titleHeading">
 			<div ><h2>Prescriptions</h2></div>
+		</div> -->
+<body class="titleFont">
+<div class="container pageBackground">
+	<div class="jumbotron titleHeading">
+		<a class="glyphicon glyphicon-home iconClass pull-left" href="/index" style="color:#3ab9cf; margin-top:-30px; margin-left:-25px"> </a>
+		
+		<div class="dropdown" style="color:#a5e4ff">
+		<a class="glyphicon glyphicon-th-list iconClass pull-right" data-toggle="dropdown" href="#" style="color:#3ab9cf; margin-top:-30px; margin-right:-25px"> </a>
+
+						  <li class="dropdown-menu pull-right" style="background-color:#1a525c">
+						    <a href="about" style="text-align:center; color:#a5e4ff"><p>About</p></a>
+						    <br>
+						    <a href="/user_logout" style="text-align:center; color:#a5e4ff"><p>Logout</p></a>
+						  </li>
 		</div>
+<h3 style="text-align:center; margin-top:-10px">Prescriptions</h3>
+	</div>
 		
 
 		<!-- Nav tabs -->
 		<ul class="nav nav-tabs">
-		  <li><a href="#View1" data-toggle="tab">View 1</a></li>
-		  <li class="active"><a href="#View2" data-toggle="tab">View 2</a></li>
+		  <!-- <li><a href="#View1" data-toggle="tab">View 1</a></li> -->
+		  <!-- <li class="active"><a href="#View2" data-toggle="tab">View 2</a></li> -->
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
-			  <div class="tab-pane" id="View1">
+<!-- 			  <div class="tab-pane" id="View1">
 			  		<h3> Heart Medicines </h3>
 				  		<div class="btn-group btn-lg btn-primary btn-block" style="border-radius:10px">
 							  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="color:white">
@@ -105,8 +121,8 @@
 							    <a href="refillVerification"><p>Refill</p></a>
 							  </ul>
 						</div>
-			  </div>
-			  <div class="tab-pane active" id="View2">
+			  </div> -->
+			  <div class="tab-pane active" id="View1">
 			  		<br>
 					{{#each Medicine}}				
 						<tr>
@@ -128,6 +144,8 @@
 				</a>
 				<a href="index" class="btn btn-primary btn-lg">Back</button></a>
 			</div>
+			<br>
+			<br>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">

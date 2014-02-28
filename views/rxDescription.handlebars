@@ -17,34 +17,57 @@
     <![endif]-->        
 </head>
 
-<body>
+<!-- <body> -->
+<body class="titleFont">
+<div class="container pageBackground">
+	<div class="jumbotron titleHeading">
+		<a class="glyphicon glyphicon-home iconClass pull-left" href="/index" style="color:#3ab9cf; margin-top:-30px; margin-left:-25px"> </a>
+		
+		<div class="dropdown" style="color:#a5e4ff">
+		<a class="glyphicon glyphicon-th-list iconClass pull-right" data-toggle="dropdown" href="#" style="color:#3ab9cf; margin-top:-30px; margin-right:-25px"> </a>
+
+						  <li class="dropdown-menu pull-right" style="background-color:#1a525c">
+						    <a href="about" style="text-align:center; color:#a5e4ff"><p>About</p></a>
+						    <br>
+						    <a href="/user_logout" style="text-align:center; color:#a5e4ff"><p>Logout</p></a>
+						  </li>
+		</div>
+<h3 style="text-align:center; margin-top:-10px">{{MedName}}</h3>
+	</div>	
+
+
+
+
+
 	<div class="container-fluid" class="rxDescriptionCSS">
-		<div class="col-xs-10 col-xs-offset-1"><h3>{{MedName}}</h3></div>
+	<!-- 	<div class="col-xs-10 col-xs-offset-1"><h3>{{MedName}}</h3></div> -->
 		<div class="row">
 			  <div class="col-xs-2"><span class="glyphicon glyphicon-volume-up iconClass"></span> </div>
-			  <div class="col-xs-8 col-xs-offset-1">{{Phoentical}}</div>	
+			  <div class="col-xs-8 col-xs-offset-1 " style="margin-top:15px">{{Phoentical}}</div>	
 		</div>
 		<div class="row">
 			  <div class="col-xs-2"><span class="glyphicon glyphicon-info-sign iconClass"></span> </div>
-			  <div class="col-xs-8 col-xs-offset-1">{{Info}}</div>	
+			  <div class="col-xs-8 col-xs-offset-1"style="margin-top:10px">{{Info}}</div>	
+		</div>
+		<div class="row">
+			  <div class="col-xs-2"><span class="glyphicon glyphicon-time iconClass" ></span> </div>
+<!-- 			  <div class="col-xs-3 col-xs-offset-1"><textarea class="form-control" rows="2">{{Morning-time}}</textarea></div>	
+			  <div class="col-xs-3 col-xs-offset-1"><textarea class="form-control" rows="2">{{Evening-time}}</textarea></div>	 -->
+			  <div class="col-xs-3 col-xs-offset-1" style="margin-top:15px">{{Morning-time}}</div>	
+			  <div class="col-xs-3 col-xs-offset-1" style="margin-top:15px">{{Evening-time}}</div>	
+		</div>
+		<div class="row">
+			  <div class="col-xs-2"><span class="glyphicon glyphicon-cutlery iconClass"></span> </div>
+			  <div class="col-xs-8 col-xs-offset-1" style="margin-top:15px">{{Food-info}}</div>	
 		</div>
 		<div class="row">
 			  <div class="col-xs-2"><span class="glyphicon glyphicon-calendar iconClass"></span> </div>
-			  <div class="col-xs-3 col-xs-offset-1"><textarea class="form-control" rows="2">{{Morning-time}}</textarea></div>	
-			  <div class="col-xs-3 col-xs-offset-1"><textarea class="form-control" rows="2">{{Evening-time}}</textarea></div>	
-		</div>
-		<div class="row">
-			  <div class="col-xs-2"><span class="glyphicon glyphicon-cutlery iconClass"></span> </div>
-			  <div class="col-xs-8 col-xs-offset-1">{{Food-info}}</div>	
-		</div>
-		<div class="row">
-			  <div class="col-xs-2"><span class="glyphicon glyphicon-cutlery iconClass"></span> </div>
-			  <div class="col-xs-3 col-xs-offset-1">{{Last-refill}}</div>	
-			  <div class="col-xs-3 col-xs-offset-1">{{Next-refill}}</div>	
+			  <div class="col-xs-3 col-xs-offset-1" style="margin-top:15px">{{Last-refill}}</div>	
+			  <div class="col-xs-3 col-xs-offset-1" style="margin-top:15px">{{Next-refill}}</div>	
 		</div>
 		<div class="row">
 			  <div class="col-xs-2"><span class="glyphicon glyphicon-warning-sign iconClass"></span> </div>
-			  <div class="col-xs-8 col-xs-offset-1">{{Warning}}</div>	
+			  <div class="col-xs-8 col-xs-offset-1" style="margin-top:15px">{{Warning}}</div>	
 		</div>
 		<br>
 	</div>
