@@ -18,30 +18,39 @@
 </head>
 
 <body class="titleFont">
-	<div class="container titleHeading">
+	<div class="container pageBackground">
 		<div class="jumbotron titleHeading">
-			<h1>Welcome {{username}}</h1>
+			<a class="glyphicon glyphicon-home iconClass pull-left" href="/index" style="color:#3ab9cf"> </a>
+			
+			<div class="dropdown" style="color:#a5e4ff">
+			<a class="glyphicon glyphicon-th-list iconClass pull-right" data-toggle="dropdown" href="#" style="color:#3ab9cf"> </a>
+
+							  <li class="dropdown-menu pull-right" style="background-color:#1a525c">
+							    <a href="rxDescription" style="text-align:center; color:#a5e4ff"><p>About</p></a>
+							    <a href="/user_logout" style="text-align:center; color:#a5e4ff"><p>Logout</p></a>
+							  </li>
+			</div>
+	
+ <h3 style="text-align:center">Welcome {{username}}</h3>
 		</div>	
 			<div class="btn-group btn-group-justified">
-				<a class="btn btn-success btn-lg"href="medicineTaking">Medicine Taking</a>
+				<a class="btn mybtn-success btn-lg"href="medicineTaking">Medicine Taking</a>
 			</div>
 			<br />
 			<div class="btn-group btn-group-justified">
-				<a class="btn btn-primary btn" href="prescriptions">Prescriptions</a>
-				<a class="btn btn-primary btn" href="providerInfo">Provider Info</a>
+				<a class="btn mybtn-success btn" href="prescriptions">Prescriptions</a>
+				<a class="btn mybtn-success btn" href="providerInfo">Provider Info</a>
 			</div>
 			<br />
 			<div class="btn-group btn-group-justified">
-				<a class="btn btn-primary btn" href="settings">Settings / Symptoms</a>
-				<a class="btn btn-primary btn" href="history">History</a>
+				<a class="btn mybtn-success btn" href="settings">Settings / Symptoms</a>
+				<a class="btn mybtn-success btn" href="history">History</a>
 			</div>
 			<br />
 			<div class="btn-group btn-group-justified">
-				<a class="btn btn-primary btn-lg"href="sendReport">Send Report to Doctor</a>
+				<a class="btn mybtn-success btn-lg"href="sendReport">Send Report to Doctor</a>
 			</div>
-			<br />
-			 <a href='/user_logout' class="btn btn-danger pull-right">Logout</a>
-			
+			<br />	
 		</div>
 	</body>
 	<script src="js/jquery-1.11.0.js"></script>

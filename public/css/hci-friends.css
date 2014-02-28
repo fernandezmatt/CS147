@@ -22,13 +22,29 @@
 
 .titleHeading{
 	position: relative;
-	background-color: #123940;
+	background-color: #1A525C;
+}
+
+.pageBackground{
+
+	background-color: #0F3036;
 }
 
 .titleFont{
 
 	color: #298291;
 }
+
+.mybtn-success{
+  color: #A5E4FF;
+  background-color: #1A525C;
+  border-color: #48e4ff;
+	
+}
+
+
+
+
 
 #rx_primary{
 		position: relative;
