@@ -18,7 +18,9 @@
 }
 
 /*Brian's CSS additions for use on the prescription page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5*/
-
+html, body{ 
+  height: 100%
+}
 
 .titleHeading{
 	position: relative;
@@ -26,7 +28,7 @@
 }
 
 .pageBackground{
-
+	min-height:100%;
 	background-color: #0F3036;
 }
 
