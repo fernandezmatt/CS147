@@ -10,8 +10,8 @@ exports.list = function(req, res){
 exports.login = function(req, res) {
   // remember the username
   var username = req.query.username;
-  if(username==""){
-  	username="Brian";
+  if(username!="Brian" && username!="Annette"){
+  	username="Guest";
   }
   console.log('username is: '+username);
   req.session.username = username;

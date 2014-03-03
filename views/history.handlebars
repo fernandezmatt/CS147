@@ -49,40 +49,90 @@
   <li><a href="#6months" data-toggle="tab">6 Months</a></li>
 </ul>
 
+
+
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="1month">
-    <p>Medication Missed:<br>
-    {{#each Medicine}}
-    {{name}}: 3<br>
-    {{/each}}
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Medicine</th>
+        <th class="col-sm-1">Doses Missed</th>
+      </tr>
+        {{#each Medicine}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
     <br>
-    Symptoms Reported:<br>
-    {{#each Symptoms}}
-    {{name}}: 2<br>
-    {{/each}}</p>
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Symptom</th>
+        <th class="col-sm-1">Days Reported</th>
+      </tr>
+        {{#each Symptoms}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
   </div>
   <div class="tab-pane" id="3months">
-    <p>Medication Missed:<br>
-    {{#each Medicine}}
-    {{name}}: 9<br>
-    {{/each}}
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Medicine</th>
+        <th class="col-sm-1">Doses Missed</th>
+      </tr>
+        {{#each Medicine}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
     <br>
-    Symptoms Reported:<br>
-    {{#each Symptoms}}
-    {{name}}: 4<br>
-    {{/each}}</p>
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Symptom</th>
+        <th class="col-sm-1">Days Reported</th>
+      </tr>
+        {{#each Symptoms}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
   </div>
   <div class="tab-pane" id="6months">
-    <p>Medication Missed:<br>
-    {{#each Medicine}}
-    {{name}}: 18<br>
-    {{/each}}
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Medicine</th>
+        <th class="col-sm-1">Doses Missed</th>
+      </tr>
+        {{#each Medicine}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
     <br>
-    Symptoms Reported:<br>
-    {{#each Symptoms}}
-    {{name}}: 8<br>
-    {{/each}}</p>
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Symptom</th>
+        <th class="col-sm-1">Days Reported</th>
+      </tr>
+        {{#each Symptoms}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
   </div>
 	<div class="btn-group btn-group-justified">
 		<a class="btn btn-primary btn-lg" href="index">Back</a>

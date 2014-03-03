@@ -37,15 +37,38 @@
 						    <a href="/user_logout" style="text-align:center; color:#a5e4ff"><p>Logout</p></a>
 						  </li>
 		</div>
-<h3 style="text-align:center; margin-top:10px">Your report has been sent!</h3>
-<h3 style="text-align:center">Thank you!</h3>
-	</div>	
-	<br />
-	<br />
+<h3 style="text-align:center; margin-top:10px">Please Confirm the following monthly report</h3>
+<h2>Monthy Report for {{username}}</h2>
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Medicine</th>
+        <th class="col-sm-1">Doses Missed</th>
+      </tr>
+        {{#each Medicine}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
+    <br>
+    <table class="table" style="font-size:large;float:center">
+      <tr>
+        <th class="col-sm-1">Symptom</th>
+        <th class="col-sm-1">Days Reported</th>
+      </tr>
+        {{#each Symptoms}}
+      <tr>
+        <td>{{name}}</td>
+        <td>0</td>
+      </tr>
+        {{/each}}
+    </table>
 	<div class="btn-group btn-group-justified">
-<!-- 		<a class="btn btn-primary btn-lg" href="index">Home</a> -->
+			<a class="btn btn-danger btn-lg" href="history">Cancel</a>
+			<a class="btn btn-success btn-lg" href="index">Send Report</a>
 	</div>
-		</div>
+
 	</body>
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
