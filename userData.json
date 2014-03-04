@@ -1,8 +1,14 @@
 [
 	{
 		"UserName": "Annette",
-		"Doctor" : "Dr. Andrew Hoffman\n 1 Pharmacy Drive \nPalo Alto, CA 94305",
-		"Pharmacy": "CVS Pharmacy\n1 Pharmacy Drive \nPalo Alto, CA 94305",
+		"Doctor": [
+			 {"name": "Dr. Andrew Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Andrew Hoffman22", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
+		 ],
+		 "Pharmacy": [
+			 {"Pname": "CVS", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "Walgreens", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"}
+		 ],
 		"Symptoms": [
 			{"name": "Nausea"},
 			{"name": "Headache"},
@@ -16,8 +22,14 @@
 	},
 	{
 		"UserName": "Brian",
-		"Doctor" : "Dr. Steve Carey \n2 Chelsea Court \nSeaford, DE 19973",
-		"Pharmacy": "Walgreens Pharmacy \n1 Pharmacy Drive \nPalo Alto, CA 94305",
+		"Doctor": [
+			 {"name": "Dr. Andrew Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Andrew Hoffman22", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
+		 ],
+		 "Pharmacy": [
+			 {"Pname": "CVS", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "Walgreens", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"}
+		 ],
 		"Symptoms": [
 			{"name": "Nausea"},
 			{"name": "Headache"},
@@ -32,8 +44,14 @@
 	},
 	{
 		"UserName": "Guest",
-		"Doctor" : "Dr. Steve Carey \n2 Chelsea Court \nSeaford, DE 19973",
-		"Pharmacy": "Walgreens Pharmacy \n1 Pharmacy Drive \nPalo Alto, CA 94305",
+		"Doctor": [
+			 {"name": "Dr. Andrew Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			  {"name": "Dr. Andrew Hoffman22", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
+		 ],
+		 "Pharmacy": [
+			 {"Pname": "CVS", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "Walgreens", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"}
+		 ],
 		"Symptoms": [
 			{"name": "Nausea"},
 			{"name": "Headache"},

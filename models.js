@@ -4,8 +4,8 @@ var Mongoose = require('mongoose');
 var UserSchema = new Mongoose.Schema({
   // fields are defined here
   "UserName": String,
-  "Doctor": String,
-  "Pharmacy": String,
+  "Doctor": Array,
+  "Pharmacy": Array,
   "Symptoms": Array,
   "Medicine": Array
 });
