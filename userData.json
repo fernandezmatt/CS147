@@ -3,10 +3,14 @@
 		"UserName": "Annette",
 		"Doctor": [
 			 {"name": "Dr. Andrew Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
-			 {"name": "Dr. Andrew Hoffman22", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
+			 {"name": "Dr. Melinda Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Phil", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Daniel Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
 		 ],
 		 "Pharmacy": [
 			 {"Pname": "CVS", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "RiteAid", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "Pill Place", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
 			 {"Pname": "Walgreens", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"}
 		 ],
 		"Symptoms": [
@@ -16,18 +20,25 @@
 			{"name": "Fevers"}
 		],
 		"Medicine": [
-			 {"name": "Tylenol", "quantity": "2", "image_location": "/pictures/pill1.jpg"},
-			 {"name": "Asprin", "quantity": "1", "image_location": "/pictures/pill3.jpg"}
+			 {"name": "Abilify", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
+			 {"name": "Lidex", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Rabavert", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Reglan", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Zyvox", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	},
 	{
 		"UserName": "Brian",
 		"Doctor": [
 			 {"name": "Dr. Andrew Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
-			 {"name": "Dr. Andrew Hoffman22", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
+			 {"name": "Dr. Melinda Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Phil", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Daniel Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
 		 ],
 		 "Pharmacy": [
 			 {"Pname": "CVS", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "RiteAid", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "Pill Place", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
 			 {"Pname": "Walgreens", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"}
 		 ],
 		"Symptoms": [
@@ -37,19 +48,25 @@
 			{"name": "Fevers"}
 		],
 		"Medicine": [
-			 {"name": "Tylenol", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
-			 {"name": "Ibuprofen", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Asprin", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
+			 {"name": "Abilify", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
+			 {"name": "Lidex", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Rabavert", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Reglan", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Zyvox", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	},
 	{
 		"UserName": "Guest",
 		"Doctor": [
 			 {"name": "Dr. Andrew Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
-			  {"name": "Dr. Andrew Hoffman22", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
+			 {"name": "Dr. Melinda Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Phil", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
+			 {"name": "Dr. Daniel Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
 		 ],
 		 "Pharmacy": [
 			 {"Pname": "CVS", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "RiteAid", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
+			 {"Pname": "Pill Place", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
 			 {"Pname": "Walgreens", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"}
 		 ],
 		"Symptoms": [
@@ -59,9 +76,11 @@
 			{"name": "Fevers"}
 		],
 		"Medicine": [
-			 {"name": "Tylenol", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
-			 {"name": "Ibuprofen", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Asprin", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
+			 {"name": "Abilify", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
+			 {"name": "Lidex", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Rabavert", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Reglan", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
+			 {"name": "Zyvox", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	}
 ]

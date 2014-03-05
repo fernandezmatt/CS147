@@ -67,15 +67,21 @@
         {{/each}}
     </table>
     <br>
-    <table class="table" style="font-size:large;float:center">
+    <table class="table" >
       <tr>
-        <th class="col-sm-1">Symptom</th>
-        <th class="col-sm-1">Days Reported</th>
+        <th class="col-sm-3">Symptom</th>
+        <!-- <th class="col-sm-1">Days Reported</th> -->
+        <th class="col-sm-4">Doses Missed</th>
+
       </tr>
         {{#each Symptoms}}
       <tr>
         <td>{{name}}</td>
         <td>0</td>
+         <td>5</td>
+         <td>5</td>
+         <td>5</td>
+         <td>5</td>
       </tr>
         {{/each}}
     </table>
@@ -134,14 +140,13 @@
         {{/each}}
     </table>
   </div>
-	<div class="btn-group btn-group-justified">
-		<a class="btn btn-primary btn-lg" href="index">Back</a>
-	</div>
-  <br>
   <div class="btn-group btn-group-justified">
     <a class="btn mybtn-success btn-lg" href="sendReport">Send report to Doctor</a>
   </div>
   <br>
+	<div class="btn-group btn-group-justified">
+		<a class="btn btn-primary btn-lg" href="index">Back</a>
+	</div>
   <br>
 </div>
 	</body>

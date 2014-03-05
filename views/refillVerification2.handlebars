@@ -38,34 +38,20 @@
 		</div>
 <h3 style="text-align:center; margin-top:-10px">Please Select a Pharmacy</h3>
 	</div>	
+
 		<div class="container">
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				Pharmacy 1
-  				</label>
-			</div>
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				Pharmacy 2
-  				</label>
-			</div>
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				Pharmacy 3
-  				</label>
-			</div>
-			<div class="checkbox">
-  				<label>
-    				<input type="checkbox" value="">
-    				Pharmacy 4
-  				</label>
-			</div>									
+			{{#each Pharmacy}}
+				<a href="refillVerificationConfirmation"><button style="width:75%; margin-top:20px" class=" btn mybtn-success btn-lg pull-left">
+				<h3>{{Pname}}</h3>
+				<p>{{PAddress1}}</p>
+				<p>{{PAddress2}}</p>
+				<p>{{Pphone}}</p>
+				</button></a>	
+			{{/each}}								
 		</div>
+		<br>
 		<div class="btn-group btn-group-justified">
-			<a class="btn btn-danger btn-lg" href="index">CANCEL</a>
+			<a class="btn btn-danger btn-lg" href="prescriptions">CANCEL</a>
 			<a class="btn btn-success btn-lg" href="refillVerification3">CONTINUE</a>
 		</div>
 	</div>

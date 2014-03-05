@@ -7,13 +7,15 @@
 var models = require('../models');
 
 exports.view = function(req, res){
+	var PharmacyName = req.params.name;
+	console.log(PharmacyName);
 	models.UserInfo
-		.find({"UserName": req.session.username})
+		.find({"Pname": PharmacyName})
 		.exec(renderName);
 
 function renderName(err,userData){
  	if(err) console.log(err);
- 	console.log(userData);
+ 	console.log(userData[0]);
 	res.render('refillVerification3',userData[0]);
 }
 };
