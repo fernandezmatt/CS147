@@ -108,6 +108,35 @@ function initializePage() {
 			window.location.href = '/providerInfo'; // reload the page
 		});
 	});
+///////////////////////////////////////////////////////////////////////////////
+var enterTime = new Date();
+$("#record-btn").click(function(e) {
+	var wtf = $(this).attr('id');
+		console.log(wtf);
+		console.log(new Date() - enterTime);
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#prescription").click(function(e){
+		console.log('clicked');
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#symptoms").click(function(e){
+		console.log('clicked');
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#provider").click(function(e){
+		console.log('clicked');
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#history").click(function(e){
+		console.log('clicked');
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
 
 }
 
