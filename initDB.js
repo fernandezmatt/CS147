@@ -81,7 +81,7 @@ function onceClearMed(err) {
       to_save_count--;
       console.log(to_save_count + ' left to save');
       if(to_save_count <= 0) {
-        console.log('DONE');
+        console.log('DONE2');
         // The script won't terminate until the 
         // connection to the database is closed
         mongoose.connection.close()

@@ -111,36 +111,34 @@ function initializePage() {
 ///////////////////////////////////////////////////////////////////////////////
 var enterTime = new Date();
 $("#record-btn").click(function(e) {
-	var wtf = $(this).attr('id');
-		console.log(wtf);
+		console.log(clicked);
 		console.log(new Date() - enterTime);
 		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
 	});
 
 	$("#prescription").click(function(e){
 		console.log('clicked');
+		console.log(new Date() - enterTime);
 		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
 	});
 
 	$("#symptoms").click(function(e){
 		console.log('clicked');
+		console.log(new Date() - enterTime);
 		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
 	});
 
 	$("#provider").click(function(e){
 		console.log('clicked');
+		console.log(new Date() - enterTime);
 		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
 	});
 
 	$("#history").click(function(e){
 		console.log('clicked');
+		console.log(new Date() - enterTime);
 		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
 	});
 
 
 }
-
-
-
-
-
