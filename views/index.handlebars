@@ -35,7 +35,7 @@
 	</div>	
 
 			<div class="btn-group btn-group-justified">
-				<a class="btn mybtn-success btn-lg" href="medicineTaking2" style="height:75px">Record my Medicine Now</a>
+				<a class="btn mybtn-success btn-lg" href="medicineTaking2" style="height:75px" id="record-btn">Record my Medicine Now</a>
 			</div>
 <br>
 <br>
@@ -53,7 +53,7 @@
 			</div>
 			<br /> -->
 					<tr>
-						  <td ><a href="prescriptions" style="width:48%; height:75px" class="newProjectSubmitButton btn mybtn-success  pull-left"><p style="margin-top:15px">My Prescriptions</p></a> <a href="providerInfo" style="width:48%; height:75px" class=" btn mybtn-success  pull-right" ><p>My Doctor and </p><p> Pharmacy Contacts</p></a> </td>
+						  <td ><a href="prescriptions" style="width:48%; height:75px" class="newProjectSubmitButton btn mybtn-success  pull-left" id="prescription"><p style="margin-top:15px">My Prescriptions</p></a> <a href="providerInfo" style="width:48%; height:75px" class=" btn mybtn-success  pull-right" id="provider" ><p>My Doctor and </p><p> Pharmacy Contacts</p></a> </td>
 						  <br>
 						  <br>
 						  <br>
@@ -61,7 +61,7 @@
 					<br>
 					<br>
 					<tr>
-						  <td ><a href="settings" style="width:48%; height:75px" class="newProjectSubmitButton btn mybtn-success  pull-left"><p style="margin-top:15px">My Common Symptoms</p></a> <a href="history" style="width:48%; height:75px" class=" btn mybtn-success  pull-right" ><p style="margin-top:15px">My Health History</p></a> </td>
+						  <td ><a href="settings" style="width:48%; height:75px" class="newProjectSubmitButton btn mybtn-success  pull-left" id="symptoms"><p>My Common</p><p> Symptoms</p></a> <a href="history" style="width:48%; height:75px" class=" btn mybtn-success  pull-right" id="history"><p style="margin-top:15px">My Health History</p></a> </td>
 						  <br>
 						  <br>
 						  <br>
@@ -70,16 +70,7 @@
 <!-- 			<div class="btn-group btn-group-justified">
 				<a class="btn mybtn-success btn-lg"href="sendReport">Send Report to Doctor</a>
 			</div> -->
-			<br />
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+
 
 			
 		</div>
@@ -87,4 +78,14 @@
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/hci-friends.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  // ga('create', 'UA-48564659-1', 'abm-project.herokuapp.com');
+	  ga('create', 'UA-48564659-1', { 'cookieDomain': 'none' });
+	  ga('send', 'pageview');
+	</script>
 </html>

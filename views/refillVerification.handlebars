@@ -38,14 +38,19 @@
 		</div>
 <h3 style="text-align:center; margin-top:-10px">Refill from the following pharmacy?</h3>
 	</div>	
-		<div>
-			<p>{{Pharmacy}}</p>
+		<div style='font-size:large; margin-left:20px'>
+			<br>
+			<h3>{{Pharmacy.0.Pname}}</h3>
+			<p>{{Pharmacy.0.PAddress1}}</p>
+			<p>{{Pharmacy.0.PAddress2}}</p>
+			<p>{{Pharmacy.0.Pphone}}</p>
+			<br>
 		</div>
 		<br>
 		<div class="container">
 			<div class="btn-group btn-group-justified">
 				<a class="btn btn-danger" href="refillVerification2">Different Pharmacy</a>
-				<a class="btn btn-success btn-lg" href="refillVerification3">YES</a>
+				<a class="btn btn-success btn-lg" href="refillVerificationConfirmation">YES</a>
 			</div>	
 			<br>					
 		</div>

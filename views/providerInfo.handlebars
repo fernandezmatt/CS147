@@ -17,12 +17,6 @@
     <![endif]-->        
 </head>
 
-<!-- <body>
-	<div class="container our-header">
-		<div class="jumbotron">
-			<h2>Provider Info</h2>
-		</div>
-	</div> -->
 <body class="titleFont">
 <div class="container pageBackground">
 	<div class="jumbotron titleHeading">
@@ -41,37 +35,131 @@
 	</div>	
 
 	<div class="container">
-		<h2>Doctor</h2>
-<!-- 		<a class="btn btn-primary" href="javascript:editDoctor()">Edit</a> 
- -->		<textarea disabled="disabled" name="doctor" class="form-control" rows="5">
-{{Doctor}}
-		</textarea>
+		<h2 style="text-decoration:underline"> Doctor Contact Information</h2>
+	{{#each Doctor}}
+		<h3>{{name}}</h3><a><button type="button" class="btn btn-danger pull-right deleteDoctor" id="{{name}}" style="margin-right:20px">Delete</button></a>
+		<p>{{Address1}}</p>
+		<p>{{Address2}}</p>
+		<p>{{phone}}</p>
 		<br>
-		<h2>Pharmacy</h2>
-<!-- 		<a class="btn btn-primary" href="javascript:editPharmacy()">Edit</a>
- -->		<textarea disabled="disabled" name="pharmacy" class="form-control" rows="4">
-{{Pharmacy}}
-		</textarea>
-	
+	{{/each}}
 	<br />
+				<!-- Button trigger modal -->
+			<div class="btn-group ">
+				<a style="clear" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+				  Add Doctor Contact Information
+				</a>	
+			</div>
+			<br>
+			<br>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Add Doctor Contact Information</h4>
+				      </div>
+				      <div class="modal-body">
+				        	  <form id="new-project-form" role="form">
+							    <div class="form-group">
+							      <label for="DocName">Doctor Name:</label>
+							      <input type="text" class="form-control" id="DocName" placeholder="Dr. Foo Foo">
+							    </div>
+							    <div class="form-group">
+							      <label for="DocAddress1">Address 1</label>
+							      <input type="text" class="form-control" id="DocAddress1" placeholder="1 Doctor Lane">
+							    </div>
+							    <div class="form-group">
+							      <label for="DocAddress2">Address 2</label>
+							      <input type="text" class="form-control" id="DocAddress2" placeholder="Stanford, CA 94305">
+							    </div>
+							    <div class="form-group">
+							      <label for="DocNumber">Phone Number</label>
+							      <input type="text" class="form-control" id="DocNumber" rows="1" placeholder="302-542-8687">
+							    </div>
+							  </form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary" id="newDoctorSubmitButton">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+		<h2 style="text-decoration:underline"> Pharmacy Contact Information</h2>
+	{{#each Pharmacy}}
+		<h3>{{Pname}}</h3><a><button type="button" class="btn btn-danger pull-right deletePharmacy" id="{{Pname}}" style="margin-right:20px">Delete</button></a>
+		<p>{{PAddress1}}</p>
+		<p>{{PAddress2}}</p>
+		<p>{{Pphone}}</p>
+		<br>
+	{{/each}}
+
+				<!-- Button trigger modal -->
+			<div class="btn-group ">
+				<a style="clear" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal1">
+				  Add Pharmacy Contact Information
+				</a>	
+			</div>
+			<br>
+			<br>
+			
+				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Add Pharmacy Contact Information</h4>
+				      </div>
+				      <div class="modal-body">
+				        	  <form id="new-project-form" role="form">
+							    <div class="form-group">
+							      <label for="PharmacyName">Pharmacy Name:</label>
+							      <input type="text" class="form-control" id="PharmacyName" placeholder="Dr. Foo Foo">
+							    </div>
+							    <div class="form-group">
+							      <label for="PharmacyAddress1">Address 1</label>
+							      <input type="text" class="form-control" id="PharmacyAddress1" placeholder="1 Doctor Lane">
+							    </div>
+							    <div class="form-group">
+							      <label for="PharmacyAddress2">Address 2</label>
+							      <input type="text" class="form-control" id="PharmacyAddress2" placeholder="Stanford, CA 94305">
+							    </div>
+							    <div class="form-group">
+							      <label for="PharmacyNumber">Phone Number</label>
+							      <input type="text" class="form-control" id="PharmacyNumber" rows="1" placeholder="302-542-8687">
+							    </div>
+							  </form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary" id="newPharmacySubmitButton">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+
+
 	<div class="btn-group btn-group-justified">
- 		<!-- <a class="btn btn-primary btn-lg" href="/">Save Changes</a> <!-- NEED TO IMPLEMENT --> 
  		<a class="btn btn-primary btn-lg" href="index">Back</a>
 	</div>
 	</div>
 	</body>
-
-    <script type="text/javascript">
-    //     function editDoctor(){
-    //         document.getElementsByName("doctor")[0].disabled=false;
-    //     }
-    //     function editPharmacy(){
-    //         document.getElementsByName("pharmacy")[0].disabled=false;
-    //     }
-    // </script>
-
-
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/hci-friends.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  // ga('create', 'UA-48564659-1', 'abm-project.herokuapp.com');
+	  ga('create', 'UA-48564659-1', { 'cookieDomain': 'none' });
+	  ga('send', 'pageview');
+	</script>
 </html>

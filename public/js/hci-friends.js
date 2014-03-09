@@ -3,7 +3,9 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
 })
+
 
 function initializePage() {
 	$('#newSymptomSubmitButton').click(function(e) {
@@ -51,13 +53,92 @@ function initializePage() {
 		$.post('/prescriptions/new', json, function() {
 			window.location.href = '/prescriptions'; // reload the page
 		});
-	})
+	});
 
+	$('#newDoctorSubmitButton').click(function(e) {
+		console.log('clicked');
+		var DocName = $('#new-project-form #DocName').val();
+		var DocAddress1 = $('#new-project-form #DocAddress1').val();
+		var DocAddress2 = $('#new-project-form #DocAddress2').val();
+		var DocNumber = $('#new-project-form #DocNumber').val();
+		var json = {
+			"DocName": DocName,
+			"DocAddress1": DocAddress1,
+			"DocAddress2": DocAddress2,
+			"DocNumber": DocNumber
+		};
+		$.post('/providerInfo/new', json, function() {
+			window.location.href = '/providerInfo'; // reload the page
+		});
+	});
+
+	$('#newPharmacySubmitButton').click(function(e) {
+		console.log('clicked');
+		var PharmacyName = $('#new-project-form #PharmacyName').val();
+		var PharmacyAddress1 = $('#new-project-form #PharmacyAddress1').val();
+		var PharmacyAddress2 = $('#new-project-form #PharmacyAddress2').val();
+		var PharmacyNumber = $('#new-project-form #PharmacyNumber').val();
+		var json = {
+			"PharmacyName": PharmacyName,
+			"PharmacyAddress1": PharmacyAddress1,
+			"PharmacyAddress2": PharmacyAddress2,
+			"PharmacyNumber": PharmacyNumber
+		};
+		$.post('/providerInfo/newp', json, function() {
+			window.location.href = '/providerInfo'; // reload the page
+		});
+	});
+
+	$('.deletePharmacy').click(function(e) {
+		var deletePharmacy = $(this).attr('id');
+		var json = {
+			'deletePharmacy': deletePharmacy
+		};
+		$.post('/providerInfo/deletep', json, function() {
+			window.location.href = '/providerInfo'; // reload the page
+		});
+	});
+
+	$('.deleteDoctor').click(function(e) {
+		var deleteDoctor = $(this).attr('id');
+		var json = {
+			'deleteDoctor': deleteDoctor
+		};
+		$.post('/providerInfo/delete', json, function() {
+			window.location.href = '/providerInfo'; // reload the page
+		});
+	});
+///////////////////////////////////////////////////////////////////////////////
+var enterTime = new Date();
+$("#record-btn").click(function(e) {
+		console.log(clicked);
+		console.log(new Date() - enterTime);
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#prescription").click(function(e){
+		console.log('clicked');
+		console.log(new Date() - enterTime);
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#symptoms").click(function(e){
+		console.log('clicked');
+		console.log(new Date() - enterTime);
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#provider").click(function(e){
+		console.log('clicked');
+		console.log(new Date() - enterTime);
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
+
+	$("#history").click(function(e){
+		console.log('clicked');
+		console.log(new Date() - enterTime);
+		ga('send', 'event', 'button', 'click', $(this).attr('id'), new Date() - enterTime);
+	});
 
 
 }
-
-
-
-
-
