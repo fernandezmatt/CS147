@@ -41,12 +41,12 @@
 		
 
 		<!-- Nav tabs -->
-		<ul class="nav nav-tabs">
+	<!-- 	<ul class="nav nav-tabs"> -->
 		  <!-- <li><a href="#View1" data-toggle="tab">View 1</a></li> -->
 		  <!-- <li class="active"><a href="#View2" data-toggle="tab">View 2</a></li> -->
-		</ul>
+	<!-- 	</ul> -->
 		<!-- Tab panes -->
-		<div class="tab-content">
+		
 <!-- 			  <div class="tab-pane" id="View1">
 			  		<h3> Heart Medicines </h3>
 				  		<div class="btn-group btn-lg btn-primary btn-block" style="border-radius:10px">
@@ -122,8 +122,9 @@
 							  </ul>
 						</div>
 			  </div> -->
-			  <div class="tab-pane active" id="View1">
-			  		<br>
+			<!--   <div class="tab-pane active" id="View1"> -->
+		<!-- 	  		<br> -->
+		<div style="margin-top:-15px">
 					{{#each Medicine}}				
 						<tr>
 						  <td ><a href="rxDescription/{{name}}" style="width:75%" class="newProjectSubmitButton btn mybtn-success btn-lg pull-left"><p>{{name}}</p></a> <a href="refillVerification" style="width:20%" class=" btn mybtn-success btn-lg pull-right" ><p style="margin-left:-10px">Refill</p></a> </td>
@@ -135,7 +136,7 @@
 			  </div>
 			  <br>
 				<!-- Button trigger modal -->
-			<div class="btn-group btn-group-justified">
+			<div class="btn-group btn-group-justified" style="margin-top:-10px">
 				<a href="index" class="btn btn-primary btn-lg">Back</button></a>
 				<a style="clear" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
 				  <p style="margin-left:-10px">Add Prescription</p>
@@ -199,7 +200,7 @@
 				    </div>
 				  </div>
 				</div>
-		</div>
+		
 	</div>
 </body>
 	<script src="js/jquery-1.11.0.js"></script>

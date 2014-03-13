@@ -35,15 +35,15 @@
 	</div>	
 
 	<div class="container">
-		<h2 style="text-decoration:underline"> Doctor Contact Information</h2>
+		<h3 style="text-decoration:underline; margin-top:-10px"> Doctor Contact Information</h3>
 	{{#each Doctor}}
-		<h3>{{name}}</h3><a><button type="button" class="btn btn-danger pull-right deleteDoctor" id="{{name}}" style="margin-right:20px">Delete</button></a>
+		<h4>{{name}}</h4><a><button type="button" class="btn btn-danger pull-right deleteDoctor" id="{{name}}" style="margin-right:20px">Delete</button></a>
 		<p>{{Address1}}</p>
 		<p>{{Address2}}</p>
 		<p>{{phone}}</p>
 		<br>
 	{{/each}}
-	<br />
+
 				<!-- Button trigger modal -->
 			<div class="btn-group ">
 				<a style="clear" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
@@ -88,9 +88,9 @@
 				  </div>
 				</div>
 
-		<h2 style="text-decoration:underline"> Pharmacy Contact Information</h2>
+		<h3 style="text-decoration:underline"> Pharmacy Contact Information</h3>
 	{{#each Pharmacy}}
-		<h3>{{Pname}}</h3><a><button type="button" class="btn btn-danger pull-right deletePharmacy" id="{{Pname}}" style="margin-right:20px">Delete</button></a>
+		<h4>{{Pname}}</h4><a><button type="button" class="btn btn-danger pull-right deletePharmacy" id="{{Pname}}" style="margin-right:20px">Delete</button></a>
 		<p>{{PAddress1}}</p>
 		<p>{{PAddress2}}</p>
 		<p>{{Pphone}}</p>
