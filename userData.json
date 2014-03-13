@@ -21,9 +21,6 @@
 		],
 		"Medicine": [
 			 {"name": "Abilify", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
-			 {"name": "Lidex", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Rabavert", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Reglan", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
 			 {"name": "Zyvox", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	},
@@ -49,9 +46,6 @@
 		],
 		"Medicine": [
 			 {"name": "Abilify", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
-			 {"name": "Lidex", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Rabavert", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Reglan", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
 			 {"name": "Zyvox", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	},
@@ -77,9 +71,6 @@
 		],
 		"Medicine": [
 			 {"name": "Abilify", "quantity": "1", "image_location": "/pictures/pill1.jpg"},
-			 {"name": "Lidex", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Rabavert", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
-			 {"name": "Reglan", "quantity": "3", "image_location": "/pictures/pill2.jpg"},
 			 {"name": "Zyvox", "quantity": "2", "image_location": "/pictures/pill3.jpg"}
 		 ]
 	}
