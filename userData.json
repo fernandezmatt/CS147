@@ -58,11 +58,9 @@
 	{
 		"UserName": "Guest",
 		"Doctor": [
-			 {"name": "Dr. Andrew Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"},
-			 {"name": "Dr. Daniel Hoffman", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
+			 {"name": "Dr. Phil", "Address1": "1 Pharmacy Drive", "Address2": "Palo Alto, CA 94305", "phone":"302-542-8687"}
 		 ],
 		 "Pharmacy": [
-			 {"Pname": "CVS", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"},
 			 {"Pname": "Walgreens", "PAddress1": "1 Pharmacy Drive", "PAddress2": "Palo Alto, CA 94305", "Pphone":"302-542-8687"}
 		 ],
 		"Symptoms": [
