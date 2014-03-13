@@ -24,7 +24,7 @@ html, body{
 
 .titleHeading{
 	position: relative;
-	background-color: #1A525C;
+	background-color: #298291;
 }
 
 .pageBackground{
@@ -34,13 +34,14 @@ html, body{
 
 .titleFont{
 
-	color: #298291;
-/*	color:white;*/
+	/*color: #298291;*/
+	color:white;
 }
 
 .mybtn-success{
-  color: #A5E4FF;
-  background-color: #1A525C;
+  /*color: #A5E4FF;*/
+  	color:white;
+  background-color: #298291;
   border-color: #48e4ff;
 	
 }
